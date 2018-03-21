@@ -129,6 +129,11 @@ EOF
     # ADSupport/configure/CONFIG_SITE.arch.Common
     cp configure/CONFIG_SITE.$EPICS_HOST_ARCH.Common ADSupport/configure
     # make -C ADSupport
+
+    make
+    make -C ADSimDetector/simDetectorApp/
+    make -C ADSimDetector/iocs/simDetectorIOC/iocBoot/iocSimDetector/
+
 }
 
 # areadetector
